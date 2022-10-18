@@ -1,5 +1,5 @@
 /* Created by: liya getachew
-* Created pm: Sep 28 2022
+* Created pm: Oct 18 2022
 * This file contains the CSS for index.html
 */
 
@@ -22,12 +22,17 @@
 }
 
 body {
-  background-color: #eebece;
+  background-color: #ede3e5;
 }
 
 p {
-  color: #9a1313;
+  color: #000;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   padding-top: 5pt;
+}
+
+#employment-info {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
