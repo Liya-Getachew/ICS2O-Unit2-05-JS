@@ -10,16 +10,19 @@
  */
 function calculatePay() {
   // input
-  const hours = parseFloat(document.getElementById('hours').value)
-  const salary = parseFloat(document.getElementById('salary').value)
-   const TAX_RATE = 0.18
-  
-  // process
-  const takeHomeSalary = (hours * salary) * (1.00 - TAX_RATE)
-  const taxes = (hours * salary) * TAX_RATE
-  
-  // output
-  document.getElementById("pay").innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
-   document.getElementById("taxed").innerHTML = `The government will take: $ ${taxes.toFixed(2)}`
-}
+  const hours = parseFloat(document.getElementById("hours").value)
+  const salary = parseFloat(document.getElementById("salary").value)
+  const TAX_RATE = 0.18
 
+  // process
+  const takeHomeSalary = hours * salary * (1.0 - TAX_RATE)
+  const taxes = hours * salary * TAX_RATE
+
+  // output
+  document.getElementById(
+    "pay"
+  ).innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
+  document.getElementById(
+    "taxed"
+  ).innerHTML = `The government will take: $ ${taxes.toFixed(2)}`
+}
