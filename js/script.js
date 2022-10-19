@@ -21,8 +21,8 @@ function calculatePay() {
   // output
   document.getElementById(
     "pay"
-  ).innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
+  ).innerHTML = `Your pay will be:  $${takeHomeSalary.toFixed(2)}`
   document.getElementById(
     "taxed"
-  ).innerHTML = `The government will take: $ ${taxes.toFixed(2)}`
+  ).innerHTML = `The government will take: $${taxes.toFixed(2)}`
 }
